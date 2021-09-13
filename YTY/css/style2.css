@@ -1,0 +1,372 @@
+element.style{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.6s ease 0s;
+    opacity: 1;
+    height: 100%;
+    position: fixed;
+    content: " ";
+    display: table;
+    padding-bottom: 0px;
+}
+
+body, html{
+    height: 100%;
+}
+
+html{
+    width: 100%;
+    font-family: Noto Sans KR,Spoqa Han Sans,Helvetica,AppleSDGothicNeo,Arial,sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, 
+b, big, blockquote, body, button, canvas, caption, center, 
+cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, 
+figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, 
+html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, 
+ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, 
+summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0;
+    background: transparent;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+
+body {
+    display: block;
+    color: #000;
+    line-height: 1.3;
+    letter-spacing: -.7px;
+}
+
+
+#root {
+    width: 100%;
+    height: 100%;
+    min-width: 1080px;
+    min-height: 100%;
+}
+
+#root, #site-aside, #site-footer, #site-global-nav, #site-header, #site-main, #site-nav {
+    position: relative;
+}
+
+
+div{
+    display: block;
+}
+
+/* 상단 */
+
+.header-container {
+    visibility: visible;
+    font-family: Noto Sans KR,Spoqa Han Sans,Helvetica,AppleSDGothicNeo,Arial,sans-serif;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+h1{
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.ytynav{
+    height: 80px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1060;
+}
+
+
+.ytynav .ytynav-layout .container {
+    height: 100%;
+}
+
+.container, .container-fluid {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.container {
+    width: 1080px;
+}
+
+
+.container-fluid:after, .container-fluid:before, .container:after, .container:before {
+    content: " ";
+    display: table;
+}
+
+.container-fluid:after, .container:after {
+    clear: both;
+}
+
+
+.container-fluid:after, .container-fluid:before, .container:after, .container:before {
+    content: " ";
+    display: table;
+}
+
+
+.ytynav .ytynav-layout .ytynav-container{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.ytynav .ytynav-logo{
+    position: relative;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex: 0 1 auto;
+    -webkit-box-align: center;
+    justify-content: center;
+}
+
+a, button, input, textarea {
+    font-family: inherit;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 50px 10px 50px 10px;
+}
+
+a :first-child{
+    padding: 0 0 0 20px;
+}
+
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.ytysnav .ytysnav-logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.forsnav .forsnav-inline-pages {
+    display: flex;
+    -webkit-box-align: right;  
+    align-items: right;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    margin-left: 40px;
+    height: 100%;
+}
+
+
+.ytynav .ytynav-inline-pages .link-text {
+    font-size: 14px;
+    font-weight: 400;
+    height: inherit;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.container-fluid:after, .container:after {
+    clear: both;
+}
+
+
+/* 중앙 */
+
+#site-main {
+    position: relative;
+    padding-top: 80px;
+}
+
+.business_page {
+    overflow: hidden;
+    font-family: Noto Sans KR,Spoqa Han Sans,Helvetica,AppleSDGothicNeo,Arial,sans-serif;
+}
+
+.business_page .main_row {
+    padding: 30px 0 50px;
+}
+
+.main_page .main_row {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.products_review_page {
+    position: relative;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.products_review_page .concept_container {
+    padding: 30px 0 60px;
+}
+
+.container {
+    width: 1080px;
+}
+
+.container, .container-fluid {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.products_review_page .concept_container .review-list {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0!important;
+   justify-content: center;
+} 
+
+.products_review_page .concept_container .review-item {
+    cursor: pointer;
+    width: 330px;
+}
+
+.main-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    
+}
+
+
+/* 하단 */
+
+#site-footer {
+    height: 180px;
+    border-top: 1px solid #e1e1e1;
+    position: relative;
+    background-color: #fff;
+    font-family: Noto Sans KR,Spoqa Han Sans,Helvetica,AppleSDGothicNeo,Arial,sans-serif;
+}
+
+footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0;
+    background: transparent;
+}
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+#site-footer .footer-info {
+    position: relative;
+    border-top: 1px solid #e1e1e1;
+}
+
+.container {
+    width: 1080px;
+}
+
+.container, .container-fluid {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.row {
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+#site-footer .footer-info .address .detail-info{
+    margin-left: 20px;
+    text-align: left;
+}
+
+#site-footer .footer-info .address {
+    /*position: relative; */
+    
+    display: flex; 
+    padding-top: 15px;
+    font-size: 12px;
+    font-style: normal;
+    color: #969696;
+    text-align:left;
+    letter-spacing: .6px;
+}
+
+
+
+
+a, button, input, textarea {
+    font-family: inherit;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
